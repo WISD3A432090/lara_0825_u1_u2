@@ -1,9 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class AddIsFeatureInPostsTable extends Migration
 {
     /**
@@ -15,9 +13,10 @@ class AddIsFeatureInPostsTable extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             //
+            $table->string('title', 500)->change();
+            $table->boolean('is_feature')->default(false)->after('content');
         });
     }
-
     /**
      * Reverse the migrations.
      *

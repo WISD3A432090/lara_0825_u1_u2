@@ -40,10 +40,14 @@ dd($posts);
         'title'=>'updatedtitle',
         'content'=>'updatedcontent',
     ]);
-*/
+
 
     $post=\App\Post::find(6);
     $post->title='savedtitle';
     $post->content='savedcontent';
     $post->save();
+*/
+
+    $post=\App\Post::find(4);
+    $post->delete();
 });

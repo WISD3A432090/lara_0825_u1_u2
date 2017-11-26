@@ -50,6 +50,9 @@ dd($posts);
 
     $post=\App\Post::find(4);
     $post->delete();
-    */
+
     \App\Post::destroy(5);
+    */
+
+    \App\Post::destroy(7,8,9);
 });

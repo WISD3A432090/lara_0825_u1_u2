@@ -46,8 +46,10 @@ dd($posts);
     $post->title='savedtitle';
     $post->content='savedcontent';
     $post->save();
-*/
+
 
     $post=\App\Post::find(4);
     $post->delete();
+    */
+    \App\Post::destroy(5);
 });

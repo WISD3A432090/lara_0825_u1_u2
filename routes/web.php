@@ -70,7 +70,7 @@ dd($lastPost);
 */
 
     $post=new\App\Comment();
-    $post->id='9999';
+    $post->content='555';
+    $post->post_id='555';
     $post->save();
-
 });

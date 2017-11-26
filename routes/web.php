@@ -52,7 +52,14 @@ dd($posts);
     $post->delete();
 
     \App\Post::destroy(5);
-    */
+
 
     \App\Post::destroy(7,8,9);
+    */
+
+    $allPosts=\App\Post::all();
+    dd($allPosts);
+    $featuredPosts=\App\Post::where('is_feature',1)->get();
+dd($featuredPosts);
+
 });

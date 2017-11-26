@@ -67,5 +67,10 @@ dd($featuredPosts);
     dd($fourthPost);
     $lastPost=\App\Post::orderBy('id','DESC')->first();
 dd($lastPost);
-    */
+*/
+
+    $post=new\App\Comment();
+    $post->id='9999';
+    $post->save();
+
 });

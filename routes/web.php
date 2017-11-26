@@ -20,10 +20,13 @@ Route::get('/test', function () {
         'title'=>'test title',
         'content'=>'test content',
     ]);
-*/
+
     $post=new\App\Post();
     $post->title='9999';
     $post->content='9999';
     $post->save();
+*/
+    $posts=\App\Post::all();
+    dd($posts);
 
 });

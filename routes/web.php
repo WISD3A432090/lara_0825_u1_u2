@@ -25,8 +25,12 @@ Route::get('/test', function () {
     $post->title='9999';
     $post->content='9999';
     $post->save();
-*/
+
     $posts=\App\Post::all();
     dd($posts);
+*/
+
+    $post=\App\Post::find(5);
+    dd($post);
 
 });

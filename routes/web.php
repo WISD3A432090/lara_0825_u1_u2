@@ -22,8 +22,8 @@ Route::get('/test', function () {
     ]);
 */
     $post=new\App\Post();
-    $post‐>title='testtitle';
-    $post‐>content='testcontent';
-    $post‐>save();
+    $post->title='9999';
+    $post->content='9999';
+    $post->save();
 
 });

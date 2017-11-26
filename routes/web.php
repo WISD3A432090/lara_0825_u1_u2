@@ -67,10 +67,18 @@ dd($featuredPosts);
     dd($fourthPost);
     $lastPost=\App\Post::orderBy('id','DESC')->first();
 dd($lastPost);
-*/
+
 
     $post=new\App\Comment();
-    $post->content='555';
-    $post->post_id='555';
+    $post->content='666';
+    $post->post_id='444';
     $post->save();
+
+   */
+    $post=\App\Post::find(6);
+    foreach($post->comments as$comment){
+        echo$comment->content.'<br>';
+    }
+
+
 });

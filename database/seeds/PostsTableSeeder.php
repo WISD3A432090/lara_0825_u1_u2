@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Post;
 class PostsTableSeeder extends Seeder
 {
     /**
@@ -11,7 +11,7 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        foreach(range(1,20)as$number){
+        foreach (range(1,20) as $number){
             Post::create([
                 'title'=>'title'.$number,
                 'content'=>'content'.$number,

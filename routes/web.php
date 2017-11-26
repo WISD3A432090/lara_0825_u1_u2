@@ -61,10 +61,11 @@ dd($posts);
     dd($allPosts);
     $featuredPosts=\App\Post::where('is_feature',1)->get();
 dd($featuredPosts);
-    */
+
 
     $fourthPost=\App\Post::find(6);
     dd($fourthPost);
     $lastPost=\App\Post::orderBy('id','DESC')->first();
 dd($lastPost);
+    */
 });
